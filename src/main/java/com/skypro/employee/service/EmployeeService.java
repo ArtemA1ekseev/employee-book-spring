@@ -56,4 +56,8 @@ public class EmployeeService {
                 .filter(e->e.getSalary()>getSalaryAverage())
                 .collect(Collectors.toSet());
     }
+    // new
+    public Employee removeEmployee (int id) {
+        return employees.remove(id);
+    }
 }
